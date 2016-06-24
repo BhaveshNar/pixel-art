@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>pixel art </title>
+<link rel='stylesheet' href="pixelart.css">
+</head>
+<body>
+<div id="bigbox"> 
+</div> 
+<div id="pallete">
+	<div class="colorbox" id="box1"></div>
+	<div class="colorbox" id="box2"></div>
+	<div class="colorbox" id="box3"></div>
+	<div class="colorbox" id="box4"></div>
+	<div class="colorbox" id="box5"></div>
+ </div>
+<script>
+var color;
+var chhotabox = "chhotabox";
+for(var i=0; i<=153; i++)
+{
+document.getElementById('bigbox').innerHTML += "<div id='chhotabox' onmouseover='this.style.backgroundColor=color;'></div>";
+}
+var here = document.getElementById('box1');
+here.onclick = function() { color = 'red'; }
+
+var pox2= document.getElementById('box2');
+
+var pox3= document.getElementById('box3');
+
+var box4= document.getElementById('box4');
+var box5= document.getElementById('box5');
+var chhotabox= document.getElementById('chhotabox');
+	console.log("shaina" + color);
+box1.onclick=function () {
+	color='red';
+	}
+pox2.onclick=function () {
+	color='blue';
+	};
+box3.onclick=function () {
+	color='cyan';
+	};
+box4.onclick=function () {
+	color='pink';
+	};
+box5.onclick=function() {
+	color='yellow';
+	};
+
+</script>
+</body>
+</html>
+
